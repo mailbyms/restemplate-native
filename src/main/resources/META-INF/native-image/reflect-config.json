@@ -1,0 +1,14 @@
+[
+  {
+    "name": "com.gyjian.restemplatenative.service.TransApiService$JsonStructure",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true,
+    "allPublicMethods": true
+  },
+  {
+    "name": "com.gyjian.restemplatenative.service.TransApiService$Message",
+    "allDeclaredFields": true,
+    "allPublicConstructors": true,
+    "allPublicMethods": true
+  }
+]

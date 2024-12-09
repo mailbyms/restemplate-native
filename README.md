@@ -1,5 +1,5 @@
 # restemplate-native
-spring native 使用restemplate请求，并使用 jackson 反序列化为类
+spring native 使用restemplate请求。使用 jackson 把请求内容序列化为 json，并把请求结果反序列化为类
 
 ## 注意事项
 - 在类 `CustomHints` registerType() 需要反序列化的实体类，都
@@ -13,7 +13,7 @@ spring native 使用restemplate请求，并使用 jackson 反序列化为类
       <version>2.15.2</version>
     </dependency>
   ```
-
+- 把类序列化为 json 时，注意 META-INF/native-image/reflect-config.json 里的配置，以及 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY) 的注解
 ## 编译
 ```shell
   mvn clean && mvn -DskipTests -Pnative native:compile
